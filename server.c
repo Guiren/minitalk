@@ -6,7 +6,7 @@
 /*   By: cnathana <cnathana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/07 15:30:30 by cnathana          #+#    #+#             */
-/*   Updated: 2014/02/08 16:07:23 by cnathana         ###   ########.fr       */
+/*   Updated: 2014/02/08 16:44:03 by cnathana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,9 +71,9 @@ void	handler_saction(int n, struct __siginfo *info, void *uap)
 			ft_lstaddend(&client_list, ft_lstnew(&new, 0));
 	}
 	current = ft_get_client(client_list, (int)info->si_pid);
-	(void) n;
 	if (ft_decoder(current, n) == 1)
-		remove_client(&client_list, current->pid);
+		(void) n;
+//		remove_client(&client_list, current->pid);
 	(void) uap;
 	if (kill(current->pid, SIGUSR1) == -1)
 		ft_putendl("client died !");

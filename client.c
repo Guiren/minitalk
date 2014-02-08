@@ -6,7 +6,7 @@
 /*   By: cnathana <cnathana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/07 15:06:11 by cnathana          #+#    #+#             */
-/*   Updated: 2014/02/08 15:54:23 by cnathana         ###   ########.fr       */
+/*   Updated: 2014/02/08 16:43:42 by cnathana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,5 +61,6 @@ int		main(int argc, char *argv[])
 	signal(SIGUSR1, ft_do_nothing);
 	server = ft_atoi(argv[1]);
 	encode_str(argv[2], server);
+	usleep(200);
 	return (0);
 }
