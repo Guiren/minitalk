@@ -6,7 +6,7 @@
 /*   By: cnathana <cnathana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/07 15:30:30 by cnathana          #+#    #+#             */
-/*   Updated: 2014/02/08 16:00:09 by cnathana         ###   ########.fr       */
+/*   Updated: 2014/02/08 16:07:23 by cnathana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,6 @@ void	handler_saction(int n, struct __siginfo *info, void *uap)
 	t_c_info		new;
 	t_c_info		*current;
 
-	ft_putnbr(n);
-	ft_putchar('\n');
 	if (ft_existing_pid(client_list, (int)info->si_pid) == 0)
 	{
 		ft_init_client_infos(&new, info);
