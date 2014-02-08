@@ -6,7 +6,7 @@
 /*   By: cnathana <cnathana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/08 14:44:23 by cnathana          #+#    #+#             */
-/*   Updated: 2014/02/08 16:42:52 by cnathana         ###   ########.fr       */
+/*   Updated: 2014/02/08 16:52:35 by cnathana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,9 @@ char	*straddchar(char *str, char c)
 	i = 0;
 	if (str == NULL)
 	{
-		str = (char *) malloc(sizeof(char));
+		str = (char *) malloc(sizeof(char) + 1);
 		str[0] = c;
+		str[1] = 0;
 		return (str);
 	}
 	else

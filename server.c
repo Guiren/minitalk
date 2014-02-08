@@ -6,7 +6,7 @@
 /*   By: cnathana <cnathana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/07 15:30:30 by cnathana          #+#    #+#             */
-/*   Updated: 2014/02/08 16:44:03 by cnathana         ###   ########.fr       */
+/*   Updated: 2014/02/08 16:54:23 by cnathana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,6 @@
 #include <signal.h>
 #include "minitalk.h"
 #include "libft.h"
-
-void	ft_dummy(void)
-{
-	while (0);
-}
 
 void	ft_render_str(t_c_info *current)
 {
